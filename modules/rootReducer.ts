@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import posts from './post/postReducer';
 import { HYDRATE } from 'next-redux-wrapper';
+import postReducer from './post/postReducer';
 
-const rootReducer = combineReducers({ posts });
+const rootReducer = combineReducers({ posts: postReducer });
 
 export const reducer = (state, action) => {
   if (action.type === HYDRATE) {

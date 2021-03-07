@@ -11,7 +11,7 @@ export interface CommnetCreate {
 
 export interface Post {
   id?: number;
-  tille: string;
+  title: string;
   body: string;
   comment?: Commnet[];
 }
