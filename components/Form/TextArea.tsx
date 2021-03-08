@@ -5,5 +5,5 @@ const StyledTextArea = styled.textarea`
 `;
 
 export const TextArea = (props) => {
-  return <StyledTextArea {...{ props }}></StyledTextArea>;
+  return <StyledTextArea {...props}></StyledTextArea>;
 };

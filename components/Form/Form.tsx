@@ -7,5 +7,5 @@ const StyledForm = styled.form`
 `;
 
 export const Form = ({ children }) => {
-  return <StyledForm>{children}</StyledForm>;
+  return <StyledForm onSubmit={(e) => e.preventDefault()}>{children}</StyledForm>;
 };

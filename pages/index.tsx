@@ -10,6 +10,7 @@ export default function Home() {
 
   return (
     <div>
+      <NavLink href="/posts/new" title="Create new post" />
       {posts.map((post) => (
         <PostTitle key={post.id}>
           <NavLink {...{ href: `posts/${post.id}`, title: post.title }} />

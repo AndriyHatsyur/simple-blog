@@ -4,6 +4,6 @@ const StyledButton = styled.button`
   padding: 5px;
 `;
 
-export const Button = ({ children }) => {
-  return <StyledButton>{children}</StyledButton>;
+export const Button = ({ onClick, children }) => {
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
 };
